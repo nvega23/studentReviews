@@ -11,22 +11,30 @@
 }
 
 .TextContainer{
-    border: 3px solid yellow;
     width: -webkit-fill-available;
     display: flex;
     flex-direction: row;
 }
 
 .aboutMe{
-    border: 3px solid red;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
     width: inherit;
-}
-
-.aboutMeTextContainer{
-    border: 3px solid blue;
-    width: inherit;
-    background-color: peachpuff;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.aboutMeTextContainer{
+    font-family: 'Poppins', sans-serif;
+    width: inherit;
+    background-color: rgba(0, 132, 127, 0.594);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+}
+
+.nameContainer{
+    font-family: 'Poppins', sans-serif;
 }
