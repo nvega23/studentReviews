@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 const Employee = () => {
     const navigate = useNavigate();
 
+    const reviewEmployee = () => {
+        navigate('/review')
+    }
+
     return (
         <>
             <div className='employeeContainer'>
@@ -12,11 +16,11 @@ const Employee = () => {
                     <div className='aboutMe'>
                         <div className='nameContainer'>
                             Nestor Vega
-                            <button>Evaluate Employee</button>
+                            <button onClick={reviewEmployee}>Evaluate Employee</button>
                         </div>
                     </div>
                     <div className='aboutMeTextContainer'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Hi, I'm Nestor Vega, and I am deeply devoted to the art of education. Allow me to introduce myself and share my profound enthusiasm for teaching. With an ardent commitment to fostering knowledge and igniting intellectual curiosity, I embark on a journey as an educator
                     </div>
                 </div>
             </div>

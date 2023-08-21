@@ -1,5 +1,4 @@
 .employeeContainer{
-    border: 3px solid black;
     height: 35vw;   
     display: flex;
     flex-direction: row;
@@ -29,10 +28,13 @@
     font-family: 'Poppins', sans-serif;
     width: inherit;
     background-color: rgba(0, 132, 127, 0.594);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5vw;
+    /* padding: 5vw; */
+    margin: 1vw;
+    padding: 1vw;
 }
 
 .nameContainer{
