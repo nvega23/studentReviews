@@ -1,8 +1,8 @@
 import './App.css';
-import Employee from './components/employee';
-import NavBar from './components/navbar';
+import Employee from './components/MainPage/employee';
 import { BrowserRouter, Switch, Router, Link, Route, Routes } from "react-router-dom"
-import Review from './components/review';
+import Review from './components/Review/review';
+import NavBar from './components/Navbar/navbar';
 
 function App() {
   return (
