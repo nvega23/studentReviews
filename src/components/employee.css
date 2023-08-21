@@ -37,4 +37,19 @@
 
 .nameContainer{
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nameContainer button{
+    background-color: rgba(0, 132, 127, 0.594);
+    color: white;
+    padding: 8px 10px;
+    border-radius: 3vw;
+    border: none;
+    margin-top: 3vw;
+    cursor: pointer;
 }

@@ -1,12 +1,16 @@
 import './App.css';
 import Employee from './components/employee';
 import NavBar from './components/navbar';
+import { BrowserRouter, Switch, Router, Link, Route, Routes } from "react-router-dom"
 
 function App() {
   return (
     <>
       <NavBar/>
-      <Employee/>
+      <Routes>
+        <Route exact path="/" element={<Employee />} />
+        <Route exact path="/review" element={<Employee />} />
+      </Routes>
     </>
   );
 }
