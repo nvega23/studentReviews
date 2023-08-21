@@ -7,12 +7,14 @@
 .employeeImage{
     width: 55vw;
     height: 35vw;
+    animation: 1s slideIn ease-out;
 }
 
 .TextContainer{
     width: -webkit-fill-available;
     display: flex;
     flex-direction: row;
+    animation: 1.5s slideLeft ease-out;
 }
 
 .aboutMe{
@@ -43,6 +45,7 @@
     text-align: center;
     align-items: center;
     flex-direction: column;
+    /* animation: 1.5s slideUp ease-out; */
 }
 
 .nameContainer button{
@@ -53,4 +56,37 @@
     border: none;
     margin-top: 3vw;
     cursor: pointer;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%); /* Start position, off-screen to the left */
+        opacity: 10%;
+    }
+    to {
+        transform: translateX(0); /* End position, on-screen */
+        opacity: 100%;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(-100%); /* Start position, off-screen to the left */
+        opacity: 10%;
+    }
+    to {
+        transform: translateX(0); /* End position, on-screen */
+        opacity: 100%;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100%); /* Start position, off-screen to the left */
+        opacity: 10%;
+    }
+    to {
+        transform: translateX(0); /* End position, on-screen */
+        opacity: 100%;
+    }
 }
