@@ -1,7 +1,13 @@
+
 import StarReview from '../StarReview/starReview';
 import './review.css'
 
 const Review = () => {
+
+    const submitReview = () => {
+        
+    }
+
     return (
         <>
             <div className='reviewContainer'>
@@ -13,17 +19,17 @@ const Review = () => {
                             <input
                                 type='radio'
                                 name='paced'
-                                value='slow Paced'
+                                value='slow'
                             />
-                            <h5>Slow</h5>
+                            <h5>Slow Paced</h5>
                         </label>
                         <label>
                             <input
                                 type='radio'
                                 name='paced'
-                                value="Fast Paced"
+                                value="Fast"
                             />
-                            <h5>Fast</h5>
+                            <h5>Fast Paced</h5>
                         </label>
                         <label>
                             <input
@@ -41,6 +47,7 @@ const Review = () => {
                     </select>
                     <textarea placeholder='Enter additional comments'></textarea>
                     <StarReview/>
+                    <button onClick={submitReview}>Submit</button>
                 </div>
             </div>
         </>

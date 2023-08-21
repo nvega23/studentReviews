@@ -55,17 +55,23 @@
 
 textarea{
     width: 50%;
-    height: 20%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .classPace input[type="radio"]{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    cursor: pointer;
+}
+
+.classPace h5{
     cursor: pointer;
 }
 
