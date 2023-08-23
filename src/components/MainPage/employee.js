@@ -4,19 +4,19 @@ import { useNavigate } from "react-router-dom";
 const Employee = () => {
     const navigate = useNavigate();
 
-    const reviewEmployee = () => {
-        navigate('/review')
+    const reviewEmployee = (id) => {
+        navigate(`/review${id}`)
     }
 
     return (
         <>
-            <div className='employeeContainer'>
+            <div className='employeeContainer' id='1'>
                 <img className='employeeImage' src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"/>
                 <div className='TextContainer'>
                     <div className='aboutMe'>
                         <div className='nameContainer'>
                             Nestor Vega
-                            <button onClick={reviewEmployee}>Evaluate Employee</button>
+                            <button onClick={()=> reviewEmployee('1')}>Evaluate Employee</button>
                         </div>
                     </div>
                     <div className='aboutMeTextContainer'>
@@ -24,7 +24,7 @@ const Employee = () => {
                     </div>
                 </div>
             </div>
-            <div className='employeeContainer'>
+            <div className='employeeContainer' id='2'>
                 <div className='TextContainer'>
                     <div className='aboutMeTextContainer'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -32,7 +32,7 @@ const Employee = () => {
                     <div className='aboutMe'>
                         <div className='nameContainer'>
                             Nestor Vega
-                            <button onClick={reviewEmployee}>Evaluate Employee</button>
+                            <button onClick={()=> reviewEmployee('2')}>Evaluate Employee</button>
                         </div>
                     </div>
                 <img className='employeeImage' src="https://images.unsplash.com/photo-1600275669439-14e40452d20b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"/>
